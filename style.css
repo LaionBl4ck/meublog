@@ -1,0 +1,13 @@
+nav{
+    background-color: rgb(3, 3, 94);
+    color:white;
+    width:100vw;
+    position: sticky;
+    top:0;
+    display:flex;
+    justify-content: space-evenly;
+}
+body{
+    height: 150vh;
+    margin:0;
+}
