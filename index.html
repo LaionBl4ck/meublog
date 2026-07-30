@@ -57,8 +57,13 @@
       <button type="submit">Send</button>
     </form>
     <script>
+      // 1. Primeiro capturamos os elementos da tela
+      const form = document.getElementById('meu-form');
+      const textoPost = document.getElementById('texto-post');
+
+      // 2. Depois adicionamos a ação do botão
       form.addEventListener('submit', async (e) => {
-        e.preventDefault(); // Não recarrega a página
+        e.preventDefault(); // Agora sim ele vai impedir a tela de atualizar!
 
         textoPost.innerText = "🤖 A IA está pensando...";
 
