@@ -2,6 +2,7 @@
   <html lang="pt-br">
 
   <head>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=7, initial-scale=1.0">
@@ -57,13 +58,11 @@
       <button type="submit">Send</button>
     </form>
     <script>
-      // 1. Primeiro capturamos os elementos da tela
       const form = document.getElementById('meu-form');
       const textoPost = document.getElementById('texto-post');
 
-      // 2. Depois adicionamos a ação do botão
       form.addEventListener('submit', async (e) => {
-        e.preventDefault(); // Agora sim ele vai impedir a tela de atualizar!
+        e.preventDefault();
 
         textoPost.innerText = "🤖 A IA está pensando...";
 
