@@ -77,10 +77,11 @@
           })
         });
 
-        const data = await response.json();
+        // Pede para o navegador ler a resposta como texto puro
+        const text = await response.text();
 
         // Substitui o Lorem Ipsum pela resposta da IA!
-        textoPost.innerText = data.resposta;
+        textoPost.innerText = text;
       });
     </script>
   </body>
