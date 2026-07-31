@@ -2,6 +2,7 @@
   <html lang="pt-br">
 
   <head>
+    <script src=""></script>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
@@ -16,49 +17,28 @@
         <p>FORMSPREE</p>
       </a>
       <p>Detalhes</p>
-      <p>Detalhes</p>
+      <p>Sobre</p>
     </nav>
-    <h1>BLOG DO BLACK</h1>
-    <p id="texto-post">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, assumenda. Nobis cum rem quae
-      eveniet? Sequi sapiente officia et reiciendis laborum nam qui nemo, suscipit omnis facilis expedita quos
-      perferendis!
-      Blanditiis sint maiores commodi vel cumque quae incidunt beatae animi consequuntur eaque vitae, sunt impedit hic
-      repudiandae, sequi excepturi! Saepe vero ut itaque sed reiciendis tempora doloribus est corrupti! Ex.
-      Cum aliquam modi rem consequatur. Optio maiores autem natus nam eveniet voluptate, tenetur sed minus iure
-      molestiae molestias corrupti doloremque dolor tempore accusantium itaque eius, doloribus, ut blanditiis. Possimus,
-      expedita.
-      Saepe quia, voluptate explicabo modi iusto ipsam debitis eum beatae quis culpa ut quibusdam alias itaque!
-      Voluptates velit, aliquam dolor quae unde incidunt cupiditate minus necessitatibus, obcaecati id perferendis
-      iusto.
-      Nostrum laboriosam neque ab, labore pariatur odit rerum deleniti, dolorum iusto aspernatur vitae ipsa. Dolorum
-      similique accusantium iste obcaecati facere, error, libero, earum placeat atque debitis quam laboriosam asperiores
-      itaque?</p>
-    <br>
-    <br>
-    <br>
-    <br>
-    <!-- <form action="https://formspree.io/f/mwvgzopj" method="POST">
-      <label>
-        Your email:
-        <input type="email" name="email">
-      </label>
-      <label>
-        Your message:
-        <textarea name="message"></textarea>
-      </label>
-      <button type="submit">Send</button>
-    </form> -->
-    <form id="meu-form">
-      <label>
-        Your email:
-        <input type="email" id="email" required>
-      </label>
-      <label>
-        Your message:
-        <textarea id="message" required></textarea>
-      </label>
-      <button type="submit">Send</button>
-    </form>
+    <aside>
+      <form id="meu-form">
+        <div>
+          <label for="email">Digite seu email</label>
+          <input type="email" id="email" placeholder="" required>
+        </div>
+        <div>
+          <label for="message">Mande uma message:</label>
+          <textarea id="message" required></textarea>
+        </div>
+        </label>
+        <button type="submit">Send</button>
+      </form>
+    </aside>
+    <main>
+      <header>
+        <h1>BLOG DO BLACK</h1>
+        <p id="texto-post">Bem vindo a o meu blog</p>
+      </header>
+    </main>
     <script>
       const form = document.getElementById('meu-form');
       const textoPost = document.getElementById('texto-post');
@@ -69,7 +49,7 @@
         textoPost.innerText = "🤖 A IA está pensando...";
 
         // Faz a requisição direto para o Webhook de PRODUÇÃO do n8n
-        // const response = await fetch('https://blacklaion.app.n8n.cloud/webhook/23fd2132-c99b-426b-9385-ea53d085e2c8', {
+        const response = await fetch('https://blacklaion.app.n8n.cloud/webhook/23fd2132-c99b-426b-9385-ea53d085e2c8', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({

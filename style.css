@@ -1,13 +1,57 @@
-nav{
+@media screen and (min-width:768px) {
+    main{
+        margin: 2vh 2vh 0vh 5vh;
+    }
+    aside{
+        position: static;
+    }
+}
+nav {
     background-color: rgb(3, 3, 94);
-    color:white;
-    width:100vw;
+    color: white;
+    width: 100%;
     position: sticky;
-    top:0;
-    display:flex;
+    top: 0;
+    display: flex;
     justify-content: space-evenly;
 }
-body{
+
+body {
     height: 150vh;
-    margin:0;
+    margin: 0;
+    background-color: rgb(100, 109, 134);
+    color: white
+}
+
+main {
+    border-radius: 2vh;
+    color:black;
+    background-color: #fffff0;
+    margin: 2vh 65vh 0vh 5vh;
+}
+
+main header {
+    padding: 2vh;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+main header input {
+    background-color: black;
+}
+
+aside {
+    width: 30vw;
+    margin: 2vh 2vh 0vh 2vh;
+    border-radius: 0.5vh;
+    background-color: rgb(221, 211, 183);
+    position: fixed;
+    right: 0;
+}
+
+aside form {
+    margin: 5vh;
+}
+
+aside form div {
+    margin: 2vh;
 }
