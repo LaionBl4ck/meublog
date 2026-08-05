@@ -296,6 +296,16 @@ body {
     color: #ffffff;
 }
 
+.site-footer {
+    max-width: 1250px;
+    margin: 0 auto 2rem;
+    padding: 1rem 1rem 0;
+    text-align: center;
+    color: #4b5563;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+}
+
 .blink {
     animation: blinker 1s linear infinite;
 }
